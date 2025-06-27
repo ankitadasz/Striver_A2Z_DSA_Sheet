@@ -1,1 +1,1 @@
-cout<<ch;
+cout<<endl;
