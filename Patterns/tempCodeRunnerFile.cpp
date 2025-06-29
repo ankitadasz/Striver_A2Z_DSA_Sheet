@@ -11,7 +11,7 @@ int main(){
                 cout<<"1";
             }
             else{
-                cout<<n-1;
+                cout<<n;
             }
         }
         cout<<endl;
