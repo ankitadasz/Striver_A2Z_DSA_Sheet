@@ -65,4 +65,8 @@
 
 ---
 
-Let me know if you want this with code examples or images!
+v.size will give the size 
+v.popback will takeout the last element
+v1.swap(v2) will swap the vector
+v.clear() erase the entire vector
+v.empty if the element has one element it will show that its not empty where if the vector is empty it will ahow that it is empty
