@@ -51,6 +51,7 @@ cout<<endl;
  for(auto it:ar){
     cout<<it<<" ";
  }
+ cout<<endl;
 
 
 // cout<<endl;
@@ -67,7 +68,21 @@ cout<<endl;
 // cout<<endl;
 // }
 
+////INSERT function
 
+
+vector<int>m(2,100);
+m.insert(m.begin(),700);
+m.insert(m.begin()+1,2,867);//inserting 867 2 times at index1
+for(auto it:m){
+    cout<<it<<" ";
+}
+cout<<endl;
+vector<int>copy(2,50);
+m.insert(m.begin(),copy.begin(),copy.end());
+for(auto it:m){
+    cout<<it<<" ";
+}
 
 
 
