@@ -15,14 +15,14 @@ int main()
     {
         cout << it.first << " " << it.second << endl;
     }
-    cout << mpp[1]; // it will give the value you have stored in 1key
-    cout << mpp[7]; // here we dont have 7key so either it will print 0 or null
+//     cout << mpp[1]; // it will give the value you have stored in 1key
+//     cout << mpp[7]; // here we dont have 7key so either it will print 0 or null
     
-    auto it=mpp.find(3);//here it will find the adress of 3
-    cout<<it->second<<endl;
+//     auto it=mpp.find(3);//here it will find the adress of 3
+//     cout<<it->second<<endl;
 
-    auto it=mpp.find(5);//As there are no 5 it will points to after the map mpp.end()
+//     auto it=mpp.find(5);//As there are no 5 it will points to after the map mpp.end()
     
-    auto it=mpp.lower_bound(2);
-    auto it=mpp.upper_bound(3);
+//     auto it=mpp.lower_bound(2);
+//     auto it=mpp.upper_bound(3);
 }
