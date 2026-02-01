@@ -1,12 +1,13 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main(){
-    int n=1234,num=0,ld;
-    while(n!=0){
+    int n,ld,rev=0;
+    cout<<"Enter the value of n: ";
+    cin>>n;
+    while(n>0){
         ld=n%10;
-        num=num*10+ld;
+        rev=rev*10+ld;
         n=n/10;
-        
     }
-    cout<<num;
+    cout<<"The reverse of the given number is: "<<rev;
 }
