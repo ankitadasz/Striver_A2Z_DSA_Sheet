@@ -1,6 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n1=5,n2=10;
-    cout<<"gcd of this number is:"<<__gcd(n1,n2);
+  int n1,n2,i;
+  cout<<"Enter n1 and n2:";
+  cin>>n1>>n2; 
+     cout<<"GCD is:";
+  for(i=1;i<=min(n1,n2);i++){
+
+    if(n1%i==0&&n2%i==0){
+        cout<<i<<" ";
+    }
+  }
+
 }
