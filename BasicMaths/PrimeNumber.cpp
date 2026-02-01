@@ -1,16 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n=5,i,cnt=0;
+    int n,i,count=0;
+    cout<<"Enter the value of n: ";
+    cin>>n;
     for(i=1;i<=n;i++){
         if(n%i==0){
-            cnt++;
+            count++;
         }
     }
-        if(cnt>2){
-            cout<<"its not a prime number";
-        }
-        else{
-            cout<<"its a prime number";
-        }
+    if(count>2){
+        cout<<n<<" is a composite number";
     }
+    else{
+        cout<<n<<" is a prime number";
+    }
+}
