@@ -1,18 +1,20 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main(){
-    int n=121,num=0,ld,pal=n;
-    while(n!=0){
+    int n,ld,rev=0,num;
+    cout<<"Enter the number you want to check for palindrome: ";
+    cin>>n;
+    num=n;
+    while(n>0){
         ld=n%10;
-        num=num*10+ld;
+        rev=rev*10+ld;
         n=n/10;
-        
     }
-    cout<<num<<endl;
-    if(num==pal){
-        cout<<"Its a palindrome";
+    if(rev==num){
+        cout<<"The given number "<<num<<" is a palindrome";
     }
     else{
-        cout<<"Its not a palindrome";
+        cout<<"The given number "<<num<<" is not a palindrome";
+
     }
 }
