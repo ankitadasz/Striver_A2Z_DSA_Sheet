@@ -1,18 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n=1543,ld,num=0,arm=n;
-    while(n!=0){
-        ld=n%10;
-        num=num+ld*ld*ld;
+    int n,ld,arm=0,num,temp,count=0;
+    cout<<"Enter the no you want to check for Armstrong:";
+    cin>>n;
+    num=n;
+    temp=n;
+    while(n>0){
+        count++;
         n=n/10;
+        
     }
-    cout<<num;
-    if(arm==num){
-        cout<<"Its a Armstrong number";
+    while(temp>0){
+        ld=temp%10;
+        arm=arm+pow(ld,count);
+        temp=temp/10;
+    }
+    if(num==arm){
+        cout<<num<<" is an armstrong number";
     }
     else{
-        cout<<"Its not a Armstrong number";
-    }
+        cout<<num<<" is not an armstrong number";
 
+    }
 }
