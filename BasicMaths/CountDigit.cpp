@@ -1,11 +1,15 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main(){
-    int n=1,cnt=0;
-    while(n!=0){
-        n=n/10;
-        cnt++;
-
+int main()
+{
+    int n, ld, count = 0;
+    cout << "Enter the value of n:";
+    cin >> n;
+    while (n > 0)
+    {
+        ld = n % 10;
+        count++;
+        n = n / 10;
     }
-    cout<<cnt;
+    cout << "no of digits in the number:" << count;
 }
