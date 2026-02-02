@@ -1,12 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-void PrintNum(int  i, int n){
-    if(i>n)
-    return;
-    cout<<i<<endl;
-    PrintNum(i+1,n);
+void printNum(int i, int n){
+    cout<<"Enter the value of n:";
+    cin>>n;
+    while(i<=n){
+        cout<<i<<" ";
+        i++;
+    }
+    
 }
 int main(){
-   int n=5;
-   PrintNum(1,n);
+    int n;
+    printNum(1,n);
 }
