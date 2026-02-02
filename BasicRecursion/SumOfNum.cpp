@@ -1,15 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int Sum(int n){
-    if(n==0)
+int sumNum(int n){
+    if(n<0)
     return 0;
-     return n+Sum(n-1);
-
+    return n+sumNum(n-1);
+    
 }
-
 int main(){
-    int n=5;
-    cout<<Sum(n);
-    return 0;
+    int n;
+    cout<<"ENter the value of n:";
+    cin>>n;
+    cout<<"Sum is:"<<sumNum(n);
+    
+    
 }
