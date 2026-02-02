@@ -1,13 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
-void printNum( int n){
-    if(n==0)
-    return;
+void printNum(int n){
+    if(n==0){
+        return;
+    }
+    cout<<n<<" ";
     printNum(n-1);
-    cout<<n<<endl;
     
 }
 int main(){
-   int n=5;
-   printNum(n);
+    int n;
+    cout<<"Enter the value of n:";
+    cin>>n;
+    printNum(n);
+
 }
