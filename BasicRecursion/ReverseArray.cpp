@@ -1,17 +1,25 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-void ReverseArray(int a[] , int n, int i=0){
-   if(i>=n/2)
-   return;
-   swap(a[i],a[n-i-1]);
-   ReverseArray(a,n,i+1);
+void revArray(int n, int a[])
+{
+    int i;
+    if (n == 0)
+        return;
+    cout << a[n - 1] << " ";
+    revArray(n - 1, a);
 }
-int main() {
-    int a[] = {1, 2, 3, 4, 5};
-    int n = sizeof(a) / sizeof(a[0]);
-    ReverseArray(a, n);
-    for (int i = 0; i < n; i++) {
-        cout << a[i] << " ";
+int main()
+{
+    int i, n;
+    cout << "Enter the value of n:";
+    cin >> n;
+    int a[n];
+
+    cout << "Enter the array elements: ";
+    for (i = 0; i < n; i++)
+    {
+        cin >> a[i];
     }
-    cout << endl;
+    cout << "The reversed array is:";
+    revArray(n, a);
 }
