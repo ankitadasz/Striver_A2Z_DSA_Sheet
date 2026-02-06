@@ -1,14 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
-bool stringPalindrome(string s,int i=0){
-    int n=s.length();
-    if(i>=n/2)
-    return true;
-    if(s[i]!=s[n-i-1])
-    return false;
-    return stringPalindrome(s,i+1);
+bool Palindrome(string n,int start,int end){
+    if(start>=end){
+        return true;
+    }
+    if(n[start]!=n[end]){
+        return false;
+    }
+    return Palindrome(n,start+1,end-1);
+    
 }
+    
+
 int main(){
-   string s="ANKITA";
-   cout<<(stringPalindrome(s) ? "Yes":"No");
+    string n;
+    cout<<"Enter the string you want to check for palindrome: ";
+    cin>>n;
+    int start=0,end=n.length()-1;
+    if(Palindrome(n,start,end)){
+        cout<<"Its a palindrome";
+    }
+    else{
+        cout<<"its not a palindrome";
+    }
+
 }
