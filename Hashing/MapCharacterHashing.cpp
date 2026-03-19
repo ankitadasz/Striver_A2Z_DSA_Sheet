@@ -11,6 +11,9 @@ int main(){
         cin>>arr[i];
         mpp[arr[i]]++;
     }
+   for(auto it : mpp) {
+    cout << it.first << " -> " << it.second << endl;
+}
     int q;
     cout<<"Enter how many letters you want to check:";
     cin>>q;
