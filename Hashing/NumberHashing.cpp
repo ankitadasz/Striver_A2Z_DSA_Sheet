@@ -18,6 +18,7 @@ int main()
     {
         cout << it.first << "->" << it.second << endl;
     }
+ 
     int q;
     cout << "Enter how many numbers you want to search:";
     cin >> q;
@@ -28,4 +29,6 @@ int main()
         cin >> num;
         cout << num << " : " << mpp[num] << endl;
     }
+    
+      
 }

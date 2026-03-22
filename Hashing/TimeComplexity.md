@@ -1,0 +1,1 @@
+storing or fetching in map both take log(n) best average or worst
